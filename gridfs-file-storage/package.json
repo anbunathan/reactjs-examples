@@ -1,0 +1,29 @@
+{
+  "name": "gridfs-image-upload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:client": "cd ./client && npm run start",
+    "start:server": "cd ./server && node ./bin/www",
+    "install:server": "cd ./server && npm install",
+    "install:client": "cd ./client && npm install",
+    "install:all": "npm install && npm run install:server && npm run install:client",
+    "start": "concurrently \"npm run start:server\" \"npm run start:client\""
+  },
+  "author": "Tarique Ejaz",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.5",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2",
+    "multer-gridfs-storage": "^4.2.0"
+  }
+}
